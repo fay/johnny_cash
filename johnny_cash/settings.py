@@ -14,6 +14,13 @@ DATABASES = {
     }
 }
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'my_cache_table',
+    }
+}
+
 ALLOWED_HOSTS = []
 
 # Local time zone for this installation. Choices can be found here:
